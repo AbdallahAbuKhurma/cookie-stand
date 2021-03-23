@@ -1,0 +1,55 @@
+header a{
+    font-size: 20px;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px;   
+}
+
+main h2{
+    text-align: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-style: italic;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: bisque;
+
+
+}
+
+#sellingTable{
+    border: solid black 2px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 97%;
+    margin-left: 15px;
+    background-color:lightgoldenrodyellow;
+
+}
+
+#sellingTable th{
+    border: solid black 2px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+#sellingTable td{
+    border: solid black 2px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+body{
+    background-color:seashell;
+
+}
