@@ -1,0 +1,103 @@
+header a{
+    font-size: 45px;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px;   
+    position:absolute;
+    top: 155px;
+    color: black;
+    font-family: "Sofia", sans-serif;
+    border: solid black 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 50px;
+    
+}
+
+main h2{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-style: italic;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color: bisque;
+    font-family: "Audiowide", sans-serif;
+
+
+}
+
+#sellingTable{
+    border: solid black 2px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 97%;
+    margin-left: 15px;
+    font-family: "Sofia", sans-serif;
+    font-size: 20px;
+
+
+}
+
+#sellingTable th{
+    border: solid black 2px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+    background-color:lightgoldenrodyellow;
+}
+
+#sellingTable td{
+    border: solid black 2px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#title{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "Sofia", sans-serif;
+    font-weight: bold;
+
+}
+
+.inputs{
+    font-size: 20px;
+    display:block;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+    font-style: italic;
+
+}
+
+#btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: burlywood;
+    color: darkred;
+    font-family: "Audiowide", sans-serif;
+
+
+}
+
+
+
