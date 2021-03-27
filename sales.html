@@ -5,27 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salamon Sales</title>
-    <link rel="stylesheet" href="./CSS/style1.css">
+    <link rel="stylesheet" href="./CSS/sales.css">
     <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+
 </head>
 <body>
     <header>
         <a href="index.html">Home</a>
+        
     </header>
     <main>
         <h2>Selling Table</h2>
         <form action="" id="salamonForm">
             <fieldset>
-                <legend>Salamon Cookie</legend>
-                <label for="Location">Store name</label>
-                <input type="text" name = 'Location' id="Location">
-                <label for="minorder">Minimum order</label>
-                <input type="text" name = 'minorder' id="minorder">
-                <label for="maxorder">Maximum order</label>
-                <input type="text" name = 'maxorder' id="maxorder">
-                <label for="avgsales">Average Sales</label>
-                <input type="text" name = 'avgsales' id="avgsales"> 
-                <input type="submit" value="Add Store">  
+                <legend id="title">Add a branch to Salmon Cookies</legend>
+                <label class="inputs" for="Location">Store name</label>
+                <input class="inputs" type="text" name = 'Location' id="Location">
+                <label class="inputs" for="minorder">Minimum Customers</label>
+                <input class="inputs" type="text" name = 'minorder' id="minorder">
+                <label class="inputs" for="maxorder">Maximum Customers</label>
+                <input class="inputs" type="text" name = 'maxorder' id="maxorder">
+                <label class="inputs" for="avgsales">Average Sales</label>
+                <input class="inputs" type="text" name = 'avgsales' id="avgsales"> 
+                <input id="btn" type="submit" value="Add Store">  
             </fieldset>
         </form>
         <section id="section"></section>

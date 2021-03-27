@@ -12,8 +12,8 @@ function Cookies(location, minCust, maxCust, avgCookiesPerCustomer, numOfCustome
   this.minCust = minCust;
   this.maxCust = maxCust;
   this.avgCookiesPerCustomer = avgCookiesPerCustomer;
-  this.numOfCustomersPerHour = numOfCustomersPerHour;
-  this.amountOfCookiesPerHour = amountOfCookiesPerHour;
+  this.numOfCustomersPerHour = [];
+  this.amountOfCookiesPerHour = [];
   this.totalCookiesPerDay = 0;
 };
 
@@ -87,6 +87,7 @@ function calculateTotal() {
 let tableFooter = function () {
   const container = document.getElementById('sellingTable');
   const trEl = document.createElement('tr');
+  trEl.setAttribute('id','trFooter');
   let tdEl = document.createElement('td');
   tdEl.textContent = 'Totals';
   trEl.appendChild(tdEl);
@@ -139,12 +140,20 @@ cookieForm.addEventListener('submit', addNewBranch);
 function addNewBranch(event) {
   event.preventDefault();
   let location = event.target.Location.value;
-  let minCust = event.target.minorder.value;
-  let maxCust = event.target.maxorder.value;
-  let avgCookiesPerCustomer =event.target.avgsales.value;
+  let minCust = Number(event.target.minorder.value);
+  let maxCust = Number(event.target.maxorder.value);
+  let avgCookiesPerCustomer = Number(event.target.avgsales.value);
 
   let AddStore = new Cookies(location, minCust, maxCust, avgCookiesPerCustomer);
   AddStore.getCoustmerNumber();
   AddStore.caluAmountOfCookiesPerHour();
   AddStore.render();
+  
+  let tb = document.getElementById('sellingTable');
+  let tbFooter = document.getElementById('trFooter');
+  tb.removeChild(tbFooter);
+  tableFooter();
+
+  cookieForm.reset();
 }
+
